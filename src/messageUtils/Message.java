@@ -1,4 +1,5 @@
 package messageUtils;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -19,7 +20,7 @@ public class Message implements Serializable {
 		newHouses.add(houseEntry);
 	}
 
-	public ArrayList<String> getHouseInfo(int i) {
+	public ArrayList<String> getAHouseInfo(int i) {
 		return newHouses.get(i);
 	}
 
@@ -27,7 +28,7 @@ public class Message implements Serializable {
 		return newHouses.size();
 	}
 
-	public ArrayList<ArrayList<String>> getHouses() {
+	public ArrayList<ArrayList<String>> getNearbyHouses() {
 		return newHouses;
 	}
 
@@ -43,7 +44,7 @@ public class Message implements Serializable {
 		return weightedAverage.size();
 	}
 
-	public ArrayList<ArrayList<Double>> getHouse() {
+	public ArrayList<ArrayList<Double>> getWeightedHouses() {
 		return weightedAverage;
 	}
 
